@@ -28,16 +28,14 @@ squaredAndReturn(3);
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
   let count = 0;
-  return () => {
-    count += 1;
-    console.log(count);
-  }
+  return () => count += 1;
 };
 
 const newCounter = counter();
-newCounter(); // 1
-newCounter(); // 2
-newCounter(); // 3
+console.log(newCounter()); // 1
+console.log(newCounter()); // 2
+console.log(newCounter()); // 3
+
 
 /* STRETCH PROBLEM, Do not attempt until you have completed all previous tasks for today's project files */
 
