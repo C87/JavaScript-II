@@ -66,7 +66,7 @@ multiplyNums(2, 6, function(total) {
   console.log(total);
 })
 
-// -------- Contains numbers --------------- 
+// -------- Contains --------------- 
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
